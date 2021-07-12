@@ -10,10 +10,9 @@
 
 <script>
 import addItemForm from './addItemForm'
-import addItemsForm from './addItemForm.vue'
 import listView from './listView'
     export default {
-  components: { addItemsForm },
+  components: { addItemForm },
         addItemForm,
         listView
     }

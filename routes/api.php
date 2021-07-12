@@ -18,10 +18,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('todos', [TodoController::class, 'index']);
+Route::get('/todos', [TodoController::class, 'index']);
 
 
 Route::post('todo/store', [TodoController::class, 'store']);
 
 
 Route::post('todo/update/{id}', [TodoController::class, 'update']);
+
+
+Route::get('todo/delete/{id}', [TodoController::class, 'destroy']);

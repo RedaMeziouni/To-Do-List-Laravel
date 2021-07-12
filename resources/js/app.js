@@ -1,5 +1,8 @@
 import App from './components/App'
 
+// Import Vue 2.x
+import Vue from 'vue'
+
 // Import FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
